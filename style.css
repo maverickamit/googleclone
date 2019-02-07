@@ -1,86 +1,199 @@
-.btn {
-  padding: 20px;
-  margin: 3px;
-  color: grey;
-  background-color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  height: 38px;
-  border-radius: 50%;
-}
-#myimage {
-  position: fixed;
-  top: 35%;
-  left: 50%;
+@media (min-width: 480px) {
+  .btn {
+    padding: 20px;
+    margin: 3px;
+    color: grey;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 38px;
+    border-radius: 50%;
+  }
+  #myimage {
+    position: fixed;
+    top: 35%;
+    left: 50%;
 
-  transform: translate(-50%, -50%);
-}
-#myinput {
-  position: fixed;
-  top: 48%;
-  left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #myinput {
+    position: fixed;
+    top: 48%;
+    left: 50%;
 
-  transform: translate(-50%, -50%);
-}
-#bar {
-  box-shadow: 1px 0.5px 1px darkgray;
-}
-#bar:hover {
-  box-shadow: 0.2px 3px 2px darkgray;
-}
-input {
-  height: 50px;
-}
-#mybutton {
-  position: fixed;
-  top: 55%;
-  left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #bar {
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    box-shadow: 1px 0.5px 1px darkgray;
+    width: 480px;
+    height: 40px;
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-  transform: translate(-50%, -50%);
-}
-.btn:hover {
-  background-color: whitesmoke;
-  border: 0.2px solid lightgrey;
-  box-shadow: 0.2px 0.2px 1px darkgray;
+  #bar:hover {
+    box-shadow: 0.2px 2px 5px darkgray;
+  }
+
+  #mybutton {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  .btn:hover {
+    background-color: whitesmoke;
+    border: 0.2px solid lightgrey;
+    box-shadow: 0.2px 0.2px 1px darkgray;
+  }
+
+  #india {
+    background-color: whitesmoke;
+    text-align: justify;
+    position: fixed;
+    bottom: 5%;
+    padding: 6px;
+    width: 100%;
+    border: 0.1px solid rgb(228, 225, 225);
+    color: grey;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+  }
+  #about {
+    position: fixed;
+    bottom: 0%;
+    background-color: whitesmoke;
+    padding: 6px;
+    width: 100%;
+    border: 0.1px solid rgb(228, 225, 225);
+    color: grey;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 25px;
+  }
+  #mail {
+    position: fixed;
+    top: 2.5%;
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 25px;
+    text-align: right;
+    padding-right: 5%;
+    font-size: 13px;
+    white-space: nowrap;
+  }
 }
 
-#india {
-  background-color: whitesmoke;
-  text-align: justify;
-  position: fixed;
-  bottom: 5%;
-  padding: 6px;
-  width: 100%;
-  border: 0.1px solid rgb(228, 225, 225);
-  color: grey;
-  background-color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 25px;
-}
-#about {
-  position: fixed;
-  bottom: 0%;
-  background-color: whitesmoke;
-  padding: 6px;
-  width: 100%;
-  border: 0.1px solid rgb(228, 225, 225);
-  color: grey;
-  background-color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  padding-left: 25px;
-}
-#mail {
-  position: fixed;
-  top: 2.5%;
-  width: 100%;
-  background-color: white;
-  padding: 8px;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  padding-left: 25px;
-  text-align: right;
-  padding-right: 5%;
-  font-size: 13px;
-  white-space: nowrap;
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .btn {
+    padding: 20px;
+    margin: 3px;
+    color: grey;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 38px;
+    border-radius: 50%;
+  }
+  #myimage {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    max-width: 50vw;
+    transform: translate(-50%, -50%);
+  }
+  #myinput {
+    position: fixed;
+    top: 48%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  #bar {
+    border: 1px solid whitesmoke;
+    padding: 5vw;
+    box-shadow: 1px 0.5px 1px darkgray;
+    width: 70vw;
+    height: 40px;
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10vw;
+  }
+  #bar:focus {
+    outline: none;
+  }
+  #bar:hover {
+    box-shadow: 0.2px 2px 5px darkgray;
+  }
+
+  #mybutton {
+    position: fixed;
+    top: 60vh;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  .btn:hover {
+    background-color: whitesmoke;
+    border: 0.2px solid lightgrey;
+    box-shadow: 0.2px 0.2px 1px darkgray;
+  }
+
+  #india {
+    background-color: whitesmoke;
+    text-align: justify;
+    position: fixed;
+    bottom: 5%;
+    padding: 6px;
+    width: 100%;
+    border: 0.1px solid rgb(228, 225, 225);
+    color: grey;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+  }
+  #about {
+    position: fixed;
+    bottom: 0%;
+    background-color: whitesmoke;
+    padding: 6px;
+    width: 100%;
+    border: 0.1px solid rgb(228, 225, 225);
+    color: grey;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 25px;
+  }
+  #mail {
+    position: fixed;
+    top: 2.5%;
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 25px;
+    text-align: right;
+    padding-right: 5%;
+    font-size: 13px;
+    white-space: nowrap;
+  }
 }
